@@ -3,11 +3,12 @@ Rails.application.routes.draw do
   resources :system_settings
 
   mount Ckeditor::Engine => '/ckeditor'
-  root 'landing_pictures#index'
+  root 'landing_pictures#welcome'
   resources :user_account_records
   resources :landing_pictures do
     collection do
       get :admin_index
+      get :interface_index
     end
   end
 

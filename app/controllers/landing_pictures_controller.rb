@@ -5,9 +5,27 @@ class LandingPicturesController < ApplicationController
 
   caches_page :index
 
-  def index
-    @landing_pictures = LandingPicture.first(4)
+  def welcome
     render layout: false
+  end
+
+  def index
+    @menus = LandingPicture.all
+    @current_menu = LandingPicture.find_by_id(params[:current_menu_id] ) || LandingPicture.first
+    render layout: false
+  end
+
+  def interface_index
+    @menus = LandingPicture.all
+    render json: {
+      result: @menus.map{ |menu|
+        {
+          id: menu.id,
+          name: menu.name
+        }
+      },
+      comment: '测试用接口. 用法： 显示所有的分类（一级菜单）, 如：主览页面，企业章程'
+    }
   end
 
   def admin_index

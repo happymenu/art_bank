@@ -1,5 +1,9 @@
 == README
 
-Daisy go~
+管理员的入口地址： http://localhost:3000/items/admin_index
 
-maintained by happyteam.
+用户注册地址： http://localhost:3000/users/sign_up
+
+需要先建立数据库，再跑程序。
+
+

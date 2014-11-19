@@ -10,49 +10,20 @@
   border-color: white;
   border-style: solid;
 }
+
+body{text-align:center}
+
 </style>
 </head>
 <body>
-    <table style='height: 100%; width: 100%'>
-      <tr>
-        <td style='width: 50%'>
-          <!-- 左侧的两个图片 -->
-          <table style='border-spacing: 0px; height: 100%; width: 100%; padding: 2px'>
-            <tr>
-              <td style="background-image:  url('<%= @landing_pictures[0].try(:logo).try(:url) %>') ;
-                height: 35%; "
-                class='logo'
-                onclick="location.href='<%= "/items?landing_picture_id=#{@landing_pictures[0].id}" %>'" >
-              </td>
-            </tr>
-            <tr style='height: 100%'>
-              <td style="background-image:  url('<%= @landing_pictures[1].try(:logo).try(:url) %>') ;
-                height: 65%; "
-                class='logo'
-                onclick="location.href='<%= "/items?landing_picture_id=#{@landing_pictures[1].id}" %>'" >
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <!-- 右侧的两个图片 -->
-          <table style='border-spacing: 0px; height: 100%; width: 100%; padding: 2px'>
-            <tr>
-              <td style="background-image:  url('<%= @landing_pictures[2].try(:logo).try(:url) %>') ;
-                height: 50%; "
-                class='logo'
-                onclick="location.href='<%= "/items?landing_picture_id=#{@landing_pictures[2].id}" %>'" >
-              </td>
-            </tr>
-            <tr style='height: 100%'>
-              <td style="background-image:  url('<%= @landing_pictures[3].try(:logo).try(:url) %>') ;
-                height: 50%; "
-                class='logo'
-                onclick="location.href='<%= "/items?landing_picture_id=#{@landing_pictures[3].id}" %>'" >
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+<h1  >中国艺术品银行</h1>
+<% @menus.each do |menu| %>
+  <%= menu.name %>
+<% end %>
+
+<% @current_menu.items.each do |item| %>
+  <div>
+  <%= raw item.introduction %>
+  </div>
+<% end %>
 </body>
