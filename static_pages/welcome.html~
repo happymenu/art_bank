@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ArtBank</title>
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.anystretch.min.js"></script>
+
+
+</head>
+<body  class="index">
+
+<div class="background" data-stretch="images/logo.png" onclick="window.open('./index.html','_self')">
+</div>
+
+<div class="footer">
+  <div class="container">
+    2014@中国艺术银行公司
+  </div>
+</div>
+
+<script>
+  $('.background').anystretch();
+</script>
+</body>
+</html>
