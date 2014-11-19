@@ -1,21 +1,9 @@
-<head>
+<!--
 <title>
   <%= SystemSetting.first.site_name %>
 </title>
-<style>
-.logo{
-  background-position: center center;
-  background-size: cover;
-  border-width: 4px 0 4px 0;
-  border-color: white;
-  border-style: solid;
-}
+-->
 
-body{text-align:center}
-
-</style>
-</head>
-<body>
 <h1  >中国艺术品银行</h1>
 <% @menus.each do |menu| %>
   <%= menu.name %>
@@ -26,4 +14,3 @@ body{text-align:center}
   <%= raw item.introduction %>
   </div>
 <% end %>
-</body>
