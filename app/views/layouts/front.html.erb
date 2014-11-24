@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>中国艺术银行</title>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<title></title>
+<%= stylesheet_link_tag "application", :media => "all" %>
+<%= javascript_include_tag "application" %>
+</head>
+<body>
+<div class="header">
+  <div class="container" >
+    <header>
+      <div class="site-branding col-sm-6">
+        <div class="logo">
+          <%= image_tag 'bank_top.png' %>
+        </div>
+      </div>
+      <div class="search-header col-sm-offset-3 col-sm-3" style="margin-top: 5%;color:#a61713 ;">
+        <p>中文简体｜中文繁体</p>
+        <div class="input-group input-group-sm">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </span>
+          <input type="text" class="form-control" placeholder="查找">
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="banner">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul id="menu-bootstrap-demo" class="nav navbar-nav">
+            <li class="menu-item"><a href="#">首页</a></li>
+            <li class="menu-item"><a href="#">企业简介</a></li>
+            <li class="menu-item"><a href="#">艺术天地</a></li>
+            <li class="menu-item"><a href="#">银行运作</a></li>
+            <li class="menu-item"><a href="#">合作机构</a></li>
+            <li class="menu-item"><a href="#">联系我们</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <img class="img-responsive" src="<%= asset_path 'bank_news.png' %>"/>
+      </div>
+    </div>
+
+    <div class="row" >
+      <div class="col-sm-7"style="color: #977B25;">
+        <div class="media_news">
+          <%= image_tag('bank_media_news.png') %>
+          <a href="#">更多>></a>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="media_news">
+          <%= image_tag('bank_important_news.png') %>
+          <a href="#">更多>></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-7">
+        <%= image_tag 'bank_news_left.png', class: 'img-responsive' %>
+      </div>
+      <div class="col-sm-5">
+        <%= image_tag 'bank_news_right.png', class:'img-responsive' %>
+      </div>
+    </div>
+    <!--艺术天地-->
+    <div class="row">
+      <div class="col-sm-12">
+        <%= image_tag 'bank_artworld.png', class:'img-responsive' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <%= image_tag 'bank_artworld_1.png', class:'img-responsive' %>
+      </div>
+      <div class="col-sm-3">
+        <%= image_tag 'bank_artworld_2.png', class:'img-responsive' %>
+      </div>
+      <div class="col-sm-3">
+        <%= image_tag 'bank_artworld_3.png', class:'img-responsive' %>
+      </div>
+      <div class="col-sm-3">
+        <%= image_tag 'bank_artworld_4.png', class:'img-responsive' %>
+      </div>
+    </div>
+
+    <!--银行运作-->
+
+    <div class="row">
+      <div class="col-sm-12">
+<%= image_tag 'bank_operation.png', class:'img-responsive' %>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div><%= image_tag 'bank_operation_1.png', class:'img-responsive' %></div>
+        <div class="know_more"><a href="#">了解更多  >></a></div>
+      </div>
+      <div class="col-sm-3">
+        <div><%= image_tag 'bank_operation_2.png', class:'img-responsive' %></div>
+        <div class="know_more"><a href="#">了解更多  >></a></div>
+      </div>
+      <div class="col-sm-3">
+        <div> <%= image_tag 'bank_operation_3.png', class:'img-responsive' %></div>
+        <div class="know_more"><a href="#">了解更多  >></a></div>
+      </div>
+      <div class="col-sm-3">
+        <div> <%= image_tag 'bank_operation_4.png', class:'img-responsive' %></div>
+        <div class="know_more"><a href="#">了解更多  >></a></div>
+
+      </div>
+      <!--合作机构-->
+      <div class="row">
+        <div class="col-sm-12">
+<%= image_tag 'bank_cooperation.png', class:'img-responsive' %>
+
+        </div>
+      </div>
+      <div class="cooperation_div">
+        <div class="row" style="margin:40px;">
+          <div class="col-sm-4" align="center";>
+            <%= image_tag 'bank_cooperation_1.png', class:'img-responsive' %>
+          </div>
+          <div class="col-sm-4" align="center";>
+            <%= image_tag 'bank_cooperation_2.png', class:'img-responsive' %>
+          </div>
+          <div class="col-sm-4" align="center";>
+            <%= image_tag 'bank_cooperation_3.png', class:'img-responsive' %>
+          </div>
+        </div>
+
+        <div class="row" style="margin:40px;">
+          <div class="col-sm-4" align="center";>
+            <%= image_tag 'bank_cooperation_1.png', class:'img-responsive' %>
+          </div>
+          <div class="col-sm-4" align="center";>
+            <%= image_tag 'bank_cooperation_2.png', class:'img-responsive' %>
+          </div>
+          <div class="col-sm-4" align="center";>
+            <%= image_tag 'bank_cooperation_3.png', class:'img-responsive' %>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="footer" style="background-color:#313131;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="container-fluid">
+            <div class="hint">有什么问题和建议
+            </br>可以联系我们</div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" size="30" value="您的名字（必填）"style="margin-bottom:10px;" />
+              </div>
+              <div class="col-sm-6">
+                <input type="text" size="30" value="您的邮箱（必填）" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" size="30" value="您的企业名称（个人可不填）" />
+              </div>
+              <div class="col-sm-6">
+                <input type="text" size="30" value="您的联系电话" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-7">
+                <textarea name=z id="" cols="60" rows="6"style="margin-top:10px;">需求和建议在这里写</textarea>
+              </div>
+              <div class="col-sm-5 text-center">
+                <input type="button" value="发送"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div >
+            <div class="row">
+              <div class="col-sm-6">
+<%= image_tag 'bank_contacts.png' %>
+
+              </div>
+              <div class="col-sm-6" style="margin-top:2%;float:right;">
+                <div class="hint">00853-63312888</br>18710205035</br>204160735</br>art_bank@126.com</br>澳门金融中心11层</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
+

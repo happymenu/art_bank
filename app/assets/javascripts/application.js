@@ -3,6 +3,7 @@
 //= require jquery_ujs
 //= require ckeditor/init
 //= require jquery.anystretch.min
+//= require bootstrap.min
 //= require_tree .
 
 

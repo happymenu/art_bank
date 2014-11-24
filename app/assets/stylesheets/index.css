@@ -1,49 +1,37 @@
-.navbar {
-  background: #222;
-  position: relative;
-  z-index: 1000;
+.glyphicon-search{font-size: 20px;}
+.banner{background: url("../images/bank_loop.png") no-repeat; height: 41em; background-size: 100%;}
+.border-radius{border-radius:0;}
+.navbar{border: none;}
+.navbar-default{background: rgba(0, 0, 0, 0.5) !important; /* IE无效，FF有效 */ filter: alpha(opacity=50);}
+.navbar-default .navbar-nav>li>a{color:#fff;padding: 1em 2em;font-size: 1.5em;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color:#fff; background: rgba(255, 255, 255, 0.5) !important; /* IE无效，FF有效 */ filter: alpha(opacity=20); }
+.footer{background-color: #000;}
+.media_news{border-bottom: 4px  solid #000;}
+.media_news a {float: right;font-size:30px;color: #977B25;
+margin-top: 64px;}
+.know_more{
+ border:2px solid #000;
+ color:#000;
+ text-align:center;
+ }
+.know_more a{
+color: #977B25;
 }
-.navbar a {
-  color: #fff;
-}
-.navbar a:hover {
-  color: #c0865e;
-}
-.navbar-brand {
-  float: left;
-  padding-left: 0;
-  line-height: 80px;
-  font-size: 40px;
-}
-.nav.left {
-  float: left;
-  margin-left: 40px;
-  font-size: 15px;
-}
-.nav.right {
-  float: right;
-}
-.nav  li {
-  float: left;
-}
-.nav  li  a {
-  display: block;
-  font-size: 1.1em;
-  line-height: 40px;
-  padding: 5px 10px;
-  margin: 15px 10px;
-}
-.nav  li  a:hover {
-  color: #000;
-  background: #fff;
-}
-
-.index .navbar{
-background:transparent;
-}
-
-
-.background {
-  height: 1080px;
-  margin-top:-80px;
+.cooperation_div{ font-family: Arial;
+ border: 2px ;
+ border-radius: 20px;
+ padding: 30px 30px;
+ width: 100%;
+ background-color:#CCCCCC;
+ 
+ display:-ms-grid;
+ }
+ .hint{
+ color:#FFF;
+ font-size:30px;
+ font-family:黑体;
+ margin-top:20px;
+ }
+.content{
+background-color:#f5f5f5;
 }

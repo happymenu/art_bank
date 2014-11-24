@@ -12,7 +12,7 @@ class LandingPicturesController < ApplicationController
   def index
     @menus = LandingPicture.all
     @current_menu = LandingPicture.find_by_id(params[:current_menu_id] ) || LandingPicture.first
-#    render layout: false
+    render layout: 'front'
   end
 
   def interface_index
