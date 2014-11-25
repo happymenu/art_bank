@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 class LandingPicturesController < ApplicationController
   before_action :set_landing_picture, only: [:show, :edit, :update, :destroy]
-#  before_action :authenticate_user!, except: [:index]
+#  before_action :authenticate_user!, except: [:index, :welcome]
 
   caches_page :index
 
