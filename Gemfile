@@ -26,4 +26,5 @@ group :test, :development do
   gem 'capistrano-rbenv', '1.0.1'
   gem 'spring'
   gem 'magic_encoding', '0.0.2'
+  gem 'net-ssh', '2.7.0'
 end

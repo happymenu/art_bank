@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 class SystemSettingsController < ApplicationController
   before_action :set_system_setting, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+#  before_action :authenticate_user!
 
   def index
     @system_setting = SystemSetting.first || SystemSetting.create

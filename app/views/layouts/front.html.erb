@@ -112,33 +112,32 @@
 
     <div class="row">
       <div class="col-sm-12">
-<%= image_tag 'bank_operation.png', class:'img-responsive' %>
+        <%= image_tag 'bank_operation.png', class:'img-responsive' %>
 
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-3">
-        <div><%= image_tag 'bank_operation_1.png', class:'img-responsive' %></div>
+        <div><%= image_tag 'bank_operation_1.png', class:'' %></div>
         <div class="know_more"><a href="#">了解更多  >></a></div>
       </div>
       <div class="col-sm-3">
-        <div><%= image_tag 'bank_operation_2.png', class:'img-responsive' %></div>
+        <div><%= image_tag 'bank_operation_2.png', class:'' %></div>
         <div class="know_more"><a href="#">了解更多  >></a></div>
       </div>
       <div class="col-sm-3">
-        <div> <%= image_tag 'bank_operation_3.png', class:'img-responsive' %></div>
+        <div> <%= image_tag 'bank_operation_3.png', class:'' %></div>
         <div class="know_more"><a href="#">了解更多  >></a></div>
       </div>
       <div class="col-sm-3">
-        <div> <%= image_tag 'bank_operation_4.png', class:'img-responsive' %></div>
+        <div> <%= image_tag 'bank_operation_4.png', class:'' %></div>
         <div class="know_more"><a href="#">了解更多  >></a></div>
-
       </div>
       <!--合作机构-->
       <div class="row">
         <div class="col-sm-12">
-<%= image_tag 'bank_cooperation.png', class:'img-responsive' %>
+          <%= image_tag 'bank_cooperation.png', class:'img-responsive' %>
 
         </div>
       </div>
@@ -171,56 +170,71 @@
 
     </div>
   </div>
-  <div class="footer" style="background-color:#313131;">
+  <div class="footer" style="background-color:#313131; margin-top:80px;">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
           <div class="container-fluid">
-            <div class="hint">有什么问题和建议
+            <div class="hint">有什么问题和建议?
             </br>可以联系我们</div>
-            <div class="row">
+            <%= form_tag '', id: 'feedback_form' do %>
+              <div class="row">
               <div class="col-sm-6">
-                <input type="text" size="30" value="您的名字（必填）"style="margin-bottom:10px;" />
+                <input type="text" size="30" placeholder="您的名字（必填）"style="margin-bottom:10px;" />
               </div>
               <div class="col-sm-6">
-                <input type="text" size="30" value="您的邮箱（必填）" />
+                <input type="text" size="30" placeholder="您的邮箱（必填）" />
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6">
-                <input type="text" size="30" value="您的企业名称（个人可不填）" />
+                <input type="text" size="30" placeholder="您的企业名称（个人可不填）" />
               </div>
               <div class="col-sm-6">
-                <input type="text" size="30" value="您的联系电话" />
+                <input type="text" size="30" placeholder="您的联系电话" />
               </div>
             </div>
             <div class="row">
               <div class="col-sm-7">
-                <textarea name=z id="" cols="60" rows="6"style="margin-top:10px;">需求和建议在这里写</textarea>
+                <textarea name=z id="" rows="6" style="margin-top:10px; width: 310px">需求和建议在这里写</textarea>
               </div>
-              <div class="col-sm-5 text-center">
-                <input type="button" value="发送"/>
+              <div class="col-sm-5 text-center" >
+                <%= image_tag 'submit_button.png', onclick: "$('#feedback_form').submit()", style: 'cursor: pointer;
+                  margin-top: 77px'%>
               </div>
+              </div>
+            <% end %>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div >
-            <div class="row">
-              <div class="col-sm-6">
-<%= image_tag 'bank_contacts.png' %>
+          <div class="col-sm-6">
+            <div >
+              <div class="row">
+                <div class="col-sm-6">
+                  <%= image_tag 'bank_contacts.png' %>
 
-              </div>
-              <div class="col-sm-6" style="margin-top:2%;float:right;">
-                <div class="hint">00853-63312888</br>18710205035</br>204160735</br>art_bank@126.com</br>澳门金融中心11层</div>
+                </div>
+                <div class="col-sm-6" style="margin-top:2%;float:right;">
+                  <div class="hint" style='margin-top: 26px;
+                    line-height: 41px;color:#f5f5f5;'>
+                    00853-63312888</br>18710205035</br>204160735</br>art_bank@126.com</br>澳门金融中心11层</div>
+                </div>
               </div>
             </div>
+
+           
           </div>
         </div>
       </div>
+
+ <div style=" text-align:center;top:100px; font-size:35px;color:#f5f5f5;"  >
+
+                    <hr width="100%" align="center" height="6" >
+                 网站备案号：ART_BANK@126.com
+                  </div>
+
+
+
     </div>
-  </div>
-  <script src="js/bootstrap.min.js"></script>
-  </body>
-  </html>
+    </body>
+    </html>
 
