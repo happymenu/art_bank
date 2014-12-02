@@ -80,7 +80,26 @@
     </div>
     <div class="row">
       <div class="col-sm-7">
-        <%= image_tag 'bank_news_left.png', class: 'img-responsive' %>
+        <!-- 轮播div-->
+          <div class="example" style="float:left;margin-top:20px;">
+            <ul style="list-style-type:none;">
+              <li><%= image_tag '1.jpg'%></li>
+              <li><%= image_tag '2.jpg'%></li>
+              <li><%= image_tag '3.jpg'%></li>
+            </ul>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+          <div style="float:right;width:130px;color:#977b25;margin-top:20px;">
+
+            <p><a href="#" style="color:#977b25;" >中国艺术银行董事长徐志强先生敬送总统《习仲勋画册》</a></p>
+            <p><a href="#" style="color:#977b25;"  >马达加斯加总统埃里-拉乔纳里马曼皮亚尼纳接见中国艺术银行金融代表团</a></p>
+            <p><a href="#" style="color:#977b25">马达加斯加总理-库卢与中国艺术银行董事长徐志强先生亲切交谈</a></p>
+        </div>
+        <!--轮播div-->
       </div>
       <div class="col-sm-5">
         <%= image_tag 'bank_news_right.png', class:'img-responsive' %>
@@ -229,15 +248,30 @@
         </div>
       </div>
 
- <div style=" text-align:center;top:100px; font-size:28px;color:#f5f5f5;"  >
+      <div style=" text-align:center;top:100px; font-size:28px;color:#f5f5f5;"  >
 
-                    <hr width="100%" align="center" height="6" >
-                 网站备案号：ART_BANK@126.com
-                  </div>
+        <hr width="100%" align="center" height="6" >
+        网站备案号：ART_BANK@126.com
+      </div>
 
 
 
     </div>
+
+    <script>
+
+$(function(){
+
+    <!--调用Luara示例-->
+
+    $(".example").luara({width:"500",height:"334",interval:4000,selected:"seleted"});
+
+
+
+    });
+
+    </script>
+
     </body>
     </html>
 
