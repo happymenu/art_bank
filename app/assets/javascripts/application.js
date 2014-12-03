@@ -5,8 +5,6 @@
 //= require jquery.anystretch.min
 //= require bootstrap.min
 //= require jquery.min
-//= require jquery.rotate.min
-//= require jquery.rotate.1-1
 //= require_tree .
 
 
