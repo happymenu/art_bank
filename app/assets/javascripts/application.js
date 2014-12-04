@@ -4,7 +4,6 @@
 //= require ckeditor/init
 //= require jquery.anystretch.min
 //= require bootstrap.min
-//= require jquery.min
 //= require_tree .
 
 
