@@ -1,30 +1,31 @@
 <html>
-<head>
-<title>中国艺术银行</title>
+  <head>
+    <title>中国艺术银行</title>
+    <%= javascript_include_tag "application_simple" %>
+  </head>
+  <body style='background-image: url(<%= asset_path "logo.jpg"%>); background-position:center;'>
+    <div id="click_div"  style="width:100%;height:100%;" align='center'>
+      <img id="img" src="<%= asset_path 'logo_star.png' %>" width="256" height="256" />
+    </div>
 
-<%= stylesheet_link_tag "application", :media => "all"%>
-<%= javascript_include_tag "application" %>
-</head>
-<body style='background-image: url(<%= asset_path "logo.jpg"%>); background-position:center;'>
-<div id="click_div"  style="width:100%;height:100%;" align='center'>
-  <img id="img" src="<%= asset_path 'logo_star.png' %>" width="256" height="256" />
-</div>
+    <script>
 
-<script>
-$(document).ready(function(){
-    $("#click_div").rotate({
-      bind: {
-        click: function(){
-          $('#img').rotate({
-            angle:0,
-            animateTo:360,
-            easing: $.easing.easeInOutExpo
-          });
-          window.location="landing_pictures";
-        }
-      }
-    })
-});
-</script>
-</body>
+    $(document).ready(function(){
+        console.info($("#click_div"))
+
+        $("#click_div").rotate({
+          bind: {
+            click: function(){
+              $('#img').rotate({
+                angle:0,
+                animateTo: 360,
+                easing: $.easing.easeInOutExpo
+              });
+              window.location="landing_pictures";
+            }
+          }
+        })
+    });
+    </script>
+  </body>
 </html>
