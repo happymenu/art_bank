@@ -80,7 +80,26 @@
     </div>
     <div class="row">
       <div class="col-sm-7">
-        <%= image_tag 'bank_news_left.png', class: 'img-responsive' %>
+        <!-- 轮播div-->
+          <div class="example" style="float:left;margin-top:20px;">
+            <ul style="list-style-type:none;">
+              <li><%= image_tag '1.jpg'%></li>
+              <li><%= image_tag '2.jpg'%></li>
+              <li><%= image_tag '3.jpg'%></li>
+            </ul>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+          <div style="float:right;width:130px;color:#977b25;margin-top:20px;">
+
+            <p><a href="#" style="color:#977b25;" >中国艺术银行董事长徐志强先生敬送总统《习仲勋画册》</a></p>
+            <p><a href="#" style="color:#977b25;"  >马达加斯加总统埃里-拉乔纳里马曼皮亚尼纳接见中国艺术银行金融代表团</a></p>
+            <p><a href="#" style="color:#977b25">马达加斯加总理-库卢与中国艺术银行董事长徐志强先生亲切交谈</a></p>
+        </div>
+        <!--轮播div-->
       </div>
       <div class="col-sm-5">
         <%= image_tag 'bank_news_right.png', class:'img-responsive' %>
@@ -175,8 +194,8 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="container-fluid">
-            <div class="hint">有什么问题和建议?
-            </br>可以联系我们</div>
+            <div class="hint"><div style='font-size:20px;'>有什么问题和建议?</div>
+              <div>可以联系我们</div></div>
             <%= form_tag '', id: 'feedback_form' do %>
               <div class="row">
               <div class="col-sm-6">
@@ -213,28 +232,46 @@
                   <%= image_tag 'bank_contacts.png' %>
 
                 </div>
-                <div class="col-sm-6" style="margin-top:2%;float:right;">
-                  <div class="hint" style='margin-top: 26px;
-                    line-height: 41px;color:#f5f5f5;'>
-                    00853-63312888</br>18710205035</br>204160735</br>art_bank@126.com</br>澳门金融中心11层</div>
+                <div class="col-sm-6" style="margin-top:1.5%;float:right;padding-left:30px;">
+                  <div class="hint" style='margin-top:60px;
+                    line-height: 26px;color:#f5f5f5;'>
+                    00853-63312888</br>18710205035</div>
+                  <div class="hint" style='margin-top:18px;color:#f5f5f5;line-height:25px;padding-top:0px;'>204160735</div>
+                  <div class="hint" style='margin-top:3px;color:#f5f5f5;'>art_bank@126.com</div>
+                  <div class="hint" style='margin-top:10px;color:#f5f5f5;'>澳门金融中心11层</div>
                 </div>
               </div>
             </div>
 
-           
+
           </div>
         </div>
       </div>
 
- <div style=" text-align:center;top:100px; font-size:35px;color:#f5f5f5;"  >
+      <div style=" text-align:center;top:100px; font-size:28px;color:#f5f5f5;"  >
 
-                    <hr width="100%" align="center" height="6" >
-                 网站备案号：ART_BANK@126.com
-                  </div>
+        <hr width="100%" align="center" height="6" >
+        网站备案号：ART_BANK@126.COM
+      </div>
 
 
 
     </div>
+
+    <script>
+
+$(function(){
+
+    <!--调用Luara示例-->
+
+    $(".example").luara({width:"500",height:"334",interval:4000,selected:"seleted"});
+
+
+
+    });
+
+    </script>
+
     </body>
     </html>
 
